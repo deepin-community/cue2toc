@@ -1,0 +1,11 @@
+This is cue2toc, a programm to convert CUE format to cdrdao's TOC format.
+The official homepage is located at http://cue2toc.sourceforge.net/
+
+Installation is done by the usual ./configure; make; make install. See
+the file INSTALL for complete installation instructions. All about
+cue2toc can be found in its man page cue2toc(1). The distribution contains
+an example configuration file cue2tocrc which should be copied to
+~/.cue2tocrc.
+
+Cue2toc was written by Matthias Czapla <dermatsch@gmx.de> and is
+distributed under the terms of the GNU General Public License.

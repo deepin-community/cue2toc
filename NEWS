@@ -1,0 +1,30 @@
+cue2toc 0.4 -- 2004-06-27
+
+ * A PREGAP of zero length is now ignored as it is useless and cdrdao
+   would not accept it. Thanks to Ken Arromdee for pointing this out.
+
+cue2toc 0.3 -- 2004-04-04
+
+ * Files specified in the CUE file can now be automatically converted
+   (thanks to Pasi Kärkkäinen for suggesting this). A user configurable
+   command will be executed if the file name matches a predefined
+   extension.
+
+ * A new configuration file in the users home directory to configure
+   the converters mentioned above.
+
+ * The -w option to specify a file name to use for all audio tracks is
+   gone.
+
+cue2toc 0.2 -- 2004-03-15
+
+ * Cue2toc is no longer limited to audio tracks. It can now also handle
+   tracks of types MODE1/2048, MODE1/2352, MODE2/2336 and MODE2/2352.
+
+ * Understands much more CUE commands.
+
+ * Updated manual page describing the CUE format understood by cue2toc.
+
+cue2toc 0.1 -- 2004-02-09
+
+ * first release

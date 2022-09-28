@@ -1,0 +1,38 @@
+# Sample configuration file for cue2toc. Copy this file to ~/.cue2tocrc
+#
+# Arguments to options must be quoted if they contain whitespace
+# characters. To include a double quote in a quoted string, precede it
+# with a backslash.
+
+# Files specified in the CUE file can automatically be converted by
+# cue2toc. If the file name ends with the string given as the first
+# argument to one of the CONVERTER options below, the command given
+# as the third argument is executed. The environment will contain
+# the variables C2T_FROM (the file name from the CUE file) and C2T_TO
+# (the same file name with the extension matching the first argument
+# replaced with the extension given as the second argument). The
+# comparison of the file name extension is not case sensitive. This
+# configuration option can occur multiple times and has no default
+# value. If multiple converters match a file name the first one will
+# be used.
+
+CONVERTER = .mp3 .wav "lame --decode \"$C2T_FROM\" \"$C2T_TO\" >/dev/null 2>&1"
+CONVERTER = .ogg .wav "oggdec -o \"$C2T_TO\" \"$C2T_FROM\" >/dev/null 2>&1"
+
+# Automatically convert files according to the rules specified with
+# the CONVERTER option above. Default is "yes".
+
+CONVERT = yes
+
+# Normally cue2toc dispalys warning messages for unsupported commands
+# and constructs which are not fatal (they are simply ignored). When
+# converting data files a message is displayed for every file going
+# to be converted. Setting this option to "yes" disables these warnings
+# and messages. The default is "no".
+
+QUIET = no
+
+# Write CD-Text data to TOC file if present in the CUE file. Default
+# is "yes".
+
+CDTEXT = yes

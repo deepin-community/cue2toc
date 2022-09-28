@@ -1,0 +1,67 @@
+2004-06-27  Matthias Czapla  <dermatsch@gmx.de>
+
+	* NEWS: Forgot to update the NEWS file. As usual.
+
+	* configure.ac, cue2toc.c: do not ouput PREGAP with zero length
+
+2004-04-04  Matthias Czapla  <dermatsch@gmx.de>
+
+	* README: *** empty log message ***
+
+	* Makefile.am, README: Updated README.
+
+	* NEWS, conf.c, config.h.in, configure.ac, cue2toc.1, cue2tocrc, error.c, error.h:
+	Updated configure.ac and man page.
+
+2004-04-03  Matthias Czapla  <dermatsch@gmx.de>
+
+	* TODO, main.c: Removed confusing hordes of command line options.
+
+	* Makefile.am, conf.c, conf.h, configure.ac, convert.c, convert.h, main.c:
+	Replaced mp3 to wav conversion by a more general approach.
+	Configuration file can now specify multiple converters
+	identified by filename extension.
+
+2004-04-01  Matthias Czapla  <dermatsch@gmx.de>
+
+	* Makefile.am, TODO, conf.c, conf.h, cue2toc.c, cue2toc.h, error.c, error.h, main.c, timecode.h:
+	Code cleanup. Added new options and configuration file parser. Added
+	better error functions.
+
+2004-03-16  Matthias Czapla  <dermatsch@gmx.de>
+
+	* ChangeLog: Added ChangeLog to cvs.
+
+2004-03-15  Matthias Czapla  <dermatsch@gmx.de>
+
+	* cue2toc.c: Fixed incorrect usage of err_fail when writing toc.
+
+	* CUESYNTAX, NEWS, README, TODO: Updated auxiliary files.
+
+	* README, TODO, cue2toc.1, cue2toc.c, main.c, timecode.c:
+	Fixed handling of mixed mode. Updated man page.
+
+	* Makefile.am, config.h.in, configure.ac, cue2toc.c, cue2toc.h, main.c:
+	Finnished option handling, updated version number, added config.h.in.
+
+2004-03-11  Matthias Czapla  <dermatsch@gmx.de>
+
+	* cue2toc.c: Finnished write_toc function
+
+2004-03-10  Matthias Czapla  <dermatsch@gmx.de>
+
+	* cue2toc.c, cue2toc.h, main.c:
+	Start of complete rewrite. Added data structures for
+	holding a cuesheet, function read_cue() and supplementary routines.
+	Should now handle all kinds of cuesheets, not just audio CDs.
+
+2004-02-10  Matthias Czapla  <dermatsch@gmx.de>
+
+	* ChangeLog: Removed handmade ChangeLog.
+
+	* AUTHORS, ChangeLog, Makefile.am, NEWS, README, TODO, configure.ac, cue2toc.1, cue2toc.c, cue2toc.h, main.c, timecode.c, timecode.h:
+	New file.
+
+	* AUTHORS, ChangeLog, Makefile.am, NEWS, README, TODO, configure.ac, cue2toc.1, cue2toc.c, cue2toc.h, main.c, timecode.c, timecode.h:
+	Put Cue2toc (release 0.1) under CVS control.
+
