@@ -2,16 +2,18 @@ Source: cue2toc
 Section: utils
 Priority: optional
 Maintainer: Asheesh Laroia <asheesh@asheesh.org>
-Build-Depends: debhelper (>= 5.0.0), autotools-dev
-Standards-Version: 3.7.2
-XS-DM-Upload-Allowed: yes
-DM-Upload-Allowed: yes
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
 Homepage: http://cue2toc.sourceforge.net/
-
+Vcs-Git: https://salsa.debian.org/debian/cue2toc.git
+Vcs-Browser: https://salsa.debian.org/debian/cue2toc
 
 Package: cue2toc
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: converts CUE files to cdrdao's TOC format
  CUE files are text files describing the layout of a CD-ROM and typically carry
  the extension ".cue".  cdrdao and cdrecord, the two CD recording programs for
